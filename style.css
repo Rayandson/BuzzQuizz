@@ -1,0 +1,844 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.cabecalho {
+  background-color: #ec362d;
+  width: 100%;
+  height: 69px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.texto-cabecalho {
+  color: #ffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 37px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 69px;
+  position: relative;
+}
+/* --------------------INÍCIO PAGINA LOADING--------------------*/
+.pagina-loading{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gif-loading {
+  width: 76px;
+  height: 76px;
+}
+
+.gif-loading img {
+  width: 100%;
+}
+
+.texto-loading {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color:#EC362D;
+  text-align: center;
+}
+/* --------------------FIM PAGINA LOADING--------------------*/
+
+
+/* --------------------INÍCIO PAGINA 1--------------------*/
+.pagina1 {
+  width: 1077px;
+  height: auto;
+  margin-top: 77px;
+  margin-bottom: 12px;
+  margin-left: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.quizzes-pessoal-vazio {
+  width: 100%;
+  border: 1px dashed #d5d5d5;
+  border-radius: 5px;
+  height: 181px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0 20px 0;
+  margin-bottom: 77px;
+}
+
+.texto-quizzes-pessoal-vazio {
+  font-size: 20px;
+  font-weight: 400;
+  color: #b9b9b9;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 23px;
+  word-wrap: break-word;
+}
+
+.texto-quizzes-pessoal {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  word-wrap: break-word;
+  margin-bottom: 12px;
+}
+
+.quizzes-pessoal-container {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.quizzes-pessoal {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+}
+
+.quizz-pessoal {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.5) 64.58%,
+      #000000 100%
+    ),
+    url(./imgs_pg1/Os-Simpsons.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 5px;
+  width: 340px;
+  height: 181px;
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+  position: relative;
+}
+
+.deletar-editar {
+  background-color: #EC362D;
+  width: 43px;
+  height: 87px;
+  border-radius: 10px 0px 0px 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 19px;
+}
+
+.botao-editar {
+  width: 43px;
+  font-weight: bold;
+  color: white;
+  background-color: #EC362D;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.botao-editar ion-icon{
+  width: 100%;
+  font-size: 17.5px;
+}
+
+.botao-deletar {
+  width: 43px;
+  font-weight: bold;
+  color: white;
+  background-color: #EC362D;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.botao-deletar ion-icon{
+  width: 100%;
+  font-size: 19px;
+}
+
+.botao-criar-quizz {
+  color: #ec362d;
+  font-size: 21px;
+  font-weight: 400;
+  background-color: #fafafa;
+  border: 1px dashed #ec362d;
+  border-radius: 50px;
+  margin-bottom: 0px;
+  width: 151px;
+  height: 40px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.botao-criar-quizz-pequeno {
+  background-color: #ec362d;
+  color: white;
+  border: none;
+  border-radius: 500px;
+  width: 31px;
+  height: 30px;
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-left: 17px;
+  margin-bottom: 12px;
+}
+
+.texto-quizzes-todos {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  word-wrap: break-word;
+  margin-bottom: 12px;
+}
+
+.quizzes-container {
+  width: 100%;
+}
+
+.quizzes-container-topo {
+  display: flex;
+  align-items: center;
+}
+
+.quizzes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+  margin-top: 12px;
+}
+
+.quizz {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.5) 64.58%,
+      #000000 100%
+    ),
+    url(./imgs_pg1/Os-Simpsons.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 5px;
+  width: 340px;
+  height: 181px;
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.texto-quizz {
+  width: 90%;
+  color: #ffff;
+  font-size: 19px;
+  margin: 10px 18px 10px 18px;
+  font-family: "Roboto", sans-serif;
+  line-height: 22px;
+  word-wrap: break-word;
+}
+
+.texto-quizz:hover {
+  text-decoration: underline;
+}
+/* --------------------FIM PAGINA 1--------------------*/
+
+/* -------------------INICIO PAGINA 2-----------------*/
+.titulocaixa {
+  height: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.color-green {
+  color: green;
+}
+
+.color-red {
+  color: red;
+}
+
+.opacity-60 {
+  opacity: 60%;
+}
+
+.QuizFinalizado {
+  width: 727px;
+}
+.porcentagemDeAcerto {
+  width: 727px;
+  height: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ec362d;
+}
+.tituloFinalQuiz {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.imagemEsubtitulo {
+  max-width: 727px;
+  display: flex;
+  margin-top: 18px;
+}
+/* .imagemEsubtitulo {
+  max-width: 727px;
+  display: flex;
+  margin-top: 18px;
+} */
+.imagenFinalQuiz {
+  width: 364px;
+  height: 273px;
+  margin-right: 21px;
+}
+.SubtituloFinal {
+  color: #484848;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 341px;
+}
+.divSeguraAsPerguntas {
+  width: 759px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+.img1 {
+  width: 329.91px;
+  height: 175.2px;
+}
+.topPerguntaQuiz {
+  width: 100%;
+  height: 227px;
+  margin-bottom: 42px;
+}
+.tituloQuiz {
+  opacity: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 39px;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+.bannerquiz {
+  width: 100%;
+  height: 227px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+.pagina2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  padding-bottom: 60px;
+}
+.caixa1 {
+  margin-top: 20px;
+  max-width: 329.91px;
+}
+
+.textoPergunta {
+  width: 100%;
+  height: 138px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+}
+.Perguntaquiz {
+  width: 759px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  padding-top: 60px;
+  background-color: #ffffff;
+  margin: 30px;
+}
+.textoFinal {
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.botaoReproduzirQuiz {
+  font-family: "Roboto", sans-serif;
+  color: #fff5f4;
+  font-size: 21px;
+  border: 1px #d5d5d5;
+  border-radius: 15px;
+  height: 52px;
+  width: 260.3px;
+  background-color: #ec362d;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.VoltarPraHome {
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  color: #818181;
+  border: none;
+  background-color: white;
+  height: 52px;
+  width: 260.3px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+.textoVoltarPraHome {
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  color: #818181;
+}
+/*-------------------INÍCIO PÁGINA 3------------------*/
+
+.basic-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.pagina3 h1 {
+  margin-top: 71px;
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.pagina3 h2 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.basic-info fieldset {
+  width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 24px 16px;
+  /* background-color: #ffffff; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+input {
+  width: 100%;
+  height: 46px;
+  background: #ffffff;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  padding-left: 18px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 19px;
+}
+
+input::placeholder,
+.nivel-descricao::placeholder {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 19px;
+  color: #bababa;
+}
+
+.pagina3 button {
+  width: 355px;
+  height: 54px;
+  background-color: #ec362d;
+  border-radius: 15px;
+  color: #fff5f4;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  border: none;
+  margin-bottom: 50px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.basic-info button {
+  margin-top: 50px;
+}
+
+.criar-perguntas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.criar-perguntas fieldset,
+.criar-niveis fieldset {
+  width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px 16px;
+  margin-bottom: 28px;
+  /* background-color: #ffffff; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+.pergunta-title,
+.nivel-title {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-edit {
+  width: 26px;
+  height: 23px;
+}
+
+.icon-edit:hover {
+  cursor: pointer;
+}
+
+.form {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 28px;
+}
+
+.criar-perguntas h2 {
+  margin-bottom: 12px;
+}
+
+
+fieldset p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #EC362D;
+}
+
+.invalido {
+  background: #FFE9E9;
+}
+
+.campo-pergunta,
+.campo-correta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.campo-incorretas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.incorretas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.incorreta1,
+.incorreta2,
+.incorreta3 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.criar-niveis {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.niveis-form {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.nivel-descricao {
+  width: 600px;
+  height: 177px;
+  background: #ffffff;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  padding-left: 18px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 19px;
+  padding-top: 8px;
+}
+
+.quizz-finalizado {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.img-quizz-container {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.img-quizz-finalizado {
+  width: 500px;
+  height: 266px;
+  position: relative;
+  top: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 65.62%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  border-radius: 5px;
+}
+
+.quizz-finalizado img {
+  width: 500px;
+  height: 266px;
+  border-radius: 5px;
+  position: absolute;
+}
+.quizz-finalizado h2 {
+  position: absolute;
+  left: 23px;
+  bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  color: #ffffff;
+}
+
+.quizz-finalizado button {
+  margin-bottom: 20px;
+}
+
+.quizz-finalizado p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  color: #818181;
+}
+
+.quizz-finalizado h1 {
+  margin-top: 40px;
+}
+
+.quizz-finalizado p:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .pagina1 {
+    width: 718px;
+  }
+}
+
+@media (max-width: 760px) {
+  .pagina1 {
+    width: 359px;
+  }
+}
+
+@media (max-width: 380px) {
+  .pagina1 {
+    margin-left: 0px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .pagina3 h1 {
+    margin-top: 37px;
+  }
+  .basic-info fieldset,
+  .criar-perguntas fieldset,
+  .criar-niveis fieldset {
+    width: 100%;
+  }
+  .pagina3 button {
+    width: 88%;
+    height: 54px;
+  }
+  .pergunta-title,
+  .nivel-title {
+    width: 100%;
+  }
+  .form {
+    width: 100%;
+  }
+  .niveis-form {
+    width: 100%;
+  }
+  .nivel-descricao {
+    width: 100%;
+  }
+  .img-quizz-finalizado {
+    width: 95%;
+    height: 52vw;
+    margin-left: 6px;
+  }
+  .quizz-finalizado img {
+    width: 95%;
+    height: auto;
+    margin-left: 6px;
+  }
+  .img-quizz-container {
+    width: 95%;
+    margin-left: 6px;
+  }
+  }
+
+/* -------------------Pagina 2 --------------------- */
+
+  @media (max-width:759px) {
+  .QuizFinalizado {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .porcentagemDeAcerto {
+    width: 100%;
+  }
+  .imagenFinalQuiz {
+    width: 100%;
+  }
+  .divSeguraAsPerguntas {
+    width: 100%;
+  }
+  .img1 {
+    width: 100%;
+    height: auto;
+  }
+  .caixa1 {
+    width: 48%;
+  }
+  .Perguntaquiz {
+    width: 100%;
+    padding: 15px
+  }
+  .botaoReproduzirQuiz {
+    width: 60%;
+  }
+  .imagemEsubtitulo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+  }
+  .SubtituloFinal {
+    max-width: 100%;
+  }
+
+}
