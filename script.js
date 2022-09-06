@@ -552,8 +552,8 @@ function finalizarQuizz() {
     document.querySelector(".pagina3").classList.add("hidden");
     carregar();
     let quiz = {
-      title: `${titulo}`,
-      image: `${imgURL}`,
+      title: `${titulo.value}`,
+      image: `${imgURL.value}`,
       questions: perguntas,
       levels: niveis,
     };
@@ -584,9 +584,9 @@ function renderizarPaginaFinal() {
   quizzFinalizado.innerHTML += `<div class="quizz-finalizado">
   <h1>Seu quizz está pronto!</h1>
   <div class="img-quizz-container">
-  <img src="${imgURL}" alt="">
+  <img src="${imgURL.value}" alt="">
   <div class="img-quizz-finalizado">
-      <h2>${titulo}</h2>
+      <h2>${titulo.value}</h2>
   </div>
   </div>
   <button onclick="acessarQuizz()">Acessar quizz</button>
